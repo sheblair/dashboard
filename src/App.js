@@ -72,6 +72,7 @@ function App() {
       />
       <main>
         {/* conditionally render <Grid />, <Instructions />, or <Account /> or <Login /> */}
+        <Grid />
       </main>
     </div>
     
