@@ -4,4 +4,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## what is this project?
 
-dashboard is a personal homepage or hub, designed to bring together all the various things you love on the web, in one place.
+dashboard is a lil home on the web where you can slow down and hear yourself think ⛲️🪴📚🛋️🏡
