@@ -1,6 +1,7 @@
+import React, { useState, useEffect } from "react"
 import Header from "./components/Header"
 import Grid from "./components/Grid"
-import Instructions from "./components/Instructions"
+// import Instructions from "./components/Instructions"
 import './App.css';
 
 // what should App contain?
@@ -40,6 +41,26 @@ import './App.css';
 //    - Todoist? or to-do apps
 
 function App() {
+
+   // render contents by iterating over array
+    //      creating objects for display:
+    //          title: title, imgUrl: url, etc.
+    // at some point you need to lift this state up to App
+
+    const [channel, setChannel] = useState([])
+
+    useEffect(() => {
+        fetch("http://api.are.na/v2/channels/entanglement")
+        .then((response) => response.json())
+        .then((data) => {
+            const contents = data.contents;
+            setChannel(contents)
+        })
+        .catch((error) => console.log(error))
+
+    }, [])
+
+    console.log(channel)
 
   function returnHome() {
     // render Grid

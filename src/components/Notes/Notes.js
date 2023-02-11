@@ -82,7 +82,7 @@ export default function Notes() {
   }
 
   return (
-    <div className="App">
+    <div className="widget">
       <NotesHeader addNote={addNote} onSearch={onSearch} searchText={searchText} />
       <NotesList notes={notes} onType={onType} removeNote={removeNote} />
     </div>
