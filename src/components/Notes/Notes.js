@@ -3,6 +3,7 @@ import NotesHeader from "./NotesHeader";
 import NotesList from "./NotesList";
 
 export default function Notes() {
+  
   const [notes, setNotes] = useState(
     JSON.parse(localStorage.getItem("notes")) || []
   );

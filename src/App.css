@@ -28,7 +28,10 @@
 }
 
 .grid-container {
-  display: grid;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav > li {
@@ -122,4 +125,38 @@
 .note__delete:hover {
   color: black;
   cursor: pointer;
+}
+
+/* arena widget */
+.arena-container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  overflow: scroll;
+}
+
+.arena-channel-list {
+  width: 50%;
+}
+
+.arena-block {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.arena-img {
+  width: 70%;
+  max-width: 100%;
+}
+
+.arena-description {
+  max-width: 100%;
+}
+
+.arena-title {
+  max-width: 100%;
 }
