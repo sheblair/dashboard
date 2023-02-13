@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons'
 
 export default function Note(props) {
   const updateTitle = (event) => {
@@ -31,10 +33,11 @@ export default function Note(props) {
         value={props.note.body}
         onChange={updateBody}
       />
-      <i
-        className="fa-solid fa-trash-can note__delete"
+      <FontAwesomeIcon
+        className="note__delete"
+        icon={faTrashAlt}
         onClick={() => props.removeNote(props.note.id)}
-      ></i>
+      />
     </li>
   );
 }

@@ -7,24 +7,29 @@ export default function Arena() {
     //      creating objects for display:
     //          title: title, imgUrl: url, etc.
 
-    const [channel, setChannel] = useState([])
+    // const [channel, setChannel] = useState([])
 
-    useEffect(() => {
-        fetch("http://api.are.na/v2/channels/entanglement-g4gmm7njxho/contents")
-        .then((response) => response.json())
-        .then((data) => {
-            const contents = data.contents;
-            setChannel(contents)
-        })
-        .catch((error) => console.log(error))
+    // useEffect(() => {
+    //     fetch("http://api.are.na/v2/channels/entanglement-g4gmm7njxho/contents")
+    //     .then((response) => response.json())
+    //     .then((data) => {
+    //         const contents = data.contents;
+    //         setChannel(contents)
+    //     })
+    //     .catch((error) => console.log(error))
 
-    }, [])
+    // }, [])
 
-    console.log(channel)
+    // console.log(channel)
+
+    function handleClick() {
+        
+    }
 
    return (
         <div className="widget">
-            <Channel channel={channel}/>
+            {/* <Channel channel={channel}/> */}
+            <button onClick={handleClick}>Login to Arena?</button>
         </div>
     )
 }

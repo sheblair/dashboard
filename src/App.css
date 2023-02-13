@@ -28,7 +28,7 @@
 }
 
 .grid-container {
-  display: flex;
+  /* display: flex; */
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
@@ -129,11 +129,12 @@
 
 /* arena widget */
 .arena-container {
-  display: flex;
+  /* display: flex; */
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 800px;
+  width: 600px;
   overflow: scroll;
 }
 
@@ -149,7 +150,6 @@
 }
 
 .arena-img {
-  width: 70%;
   max-width: 100%;
 }
 
